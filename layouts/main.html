@@ -43,5 +43,8 @@
             {% set tmppath = template_path~"/components/footer.html" %}
             {% include tmppath %}
         </div>
+
+        {% include "components/foot.html" %}
+        {% block loaded %}{% endblock %}
     </body>
 </html>
